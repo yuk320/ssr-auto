@@ -1,0 +1,19 @@
+{
+  "name": "ssr-auto",
+  "version": "1.0.0",
+  "description": "123",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "eventproxy": "^1.0.0",
+    "guid": "0.0.12",
+    "later": "^1.2.0",
+    "mixin-object": "^3.0.0",
+    "superagent": "^3.8.2"
+  }
+}
