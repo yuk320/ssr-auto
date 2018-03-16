@@ -39,7 +39,11 @@ const sched = later.parse.recur().on(4,10,16,22).hour().on(5).minute();
 
 const reflash = function () {
   console.time('reflash');
-  superagent.get("https://global.ishadowx.net/").then(data => {
+  superagent.get("https://en.ishadowx.net/").end((err,data) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
     let $ = cheerio.load(data.res.text);
     let targetDiv = $('.portfolio-item');
     let configs = [];
