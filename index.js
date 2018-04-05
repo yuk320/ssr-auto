@@ -39,7 +39,7 @@ const sched = later.parse.recur().on(4,10,16,22).hour().on(5).minute();
 
 const reflash = function () {
   console.time('reflash');
-  superagent.get("https://en.ishadowx.net/").end((err,data) => {
+  superagent.get("https://get.ishadowx.net/").end((err,data) => {
     if (err) {
       console.error(err);
       return;

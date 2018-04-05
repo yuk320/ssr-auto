@@ -58,3 +58,6 @@ typings/
 .env
 
 transfer_log.json
+
+daemon/
+temp/
